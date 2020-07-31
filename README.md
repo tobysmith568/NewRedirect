@@ -1,6 +1,7 @@
+
 # NewRedirect
 
-Redirects users to webpages where they can create new resources.
+Redirects users to web pages where they can create new resources.
 
 ### Example
 
@@ -12,7 +13,15 @@ Will redirect you to
 ```
 https://docs.google.com/document/u/0/create
 ```
-Which is the url for a new Google doc.
+Which is the URL for a new Google doc.
+
+### Currently Supported Redirects
+(Feel free to PR-in more!)
+
+| Key   | URL                                             |
+|-------|-------------------------------------------------|
+| doc   | https://docs.google.com/document/u/0/create     |
+| sheet | https://docs.google.com/spreadsheets/u/0/create |
 
 ### Why? (Browser Search Engine)
 
@@ -24,18 +33,9 @@ This functionality, along with this repo, allows you to configure your browser s
 ```
 new doc
 ```
-opens up a new Google Doc. For Example
+opens up a new Google Doc, for Example.
 
 #### Chrome
-
-![Chrome Instruction 1](media/Chrome1.png)
-![Chrome Instruction 2](media/Chrome2.png)
-![Chrome Instruction 3](media/Chrome3.png)
-
-### Currently Supported Redirects
-(Feel free to PR-in more!)
-
-| Key   | URL                                             |
-|-------|-------------------------------------------------|
-| doc   | https://docs.google.com/document/u/0/create     |
-| sheet | https://docs.google.com/spreadsheets/u/0/create |
+<img src="media/Chrome1.png" alt="Chrome Instruction 1" width="800"/>
+<img src="media/Chrome2.png" alt="Chrome Instruction 2" width="800"/>
+<img src="media/Chrome3.png" alt="Chrome Instruction 3" width="800"/>
