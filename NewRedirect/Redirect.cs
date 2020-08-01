@@ -12,7 +12,8 @@ namespace NewRedirect
         {
             { "doc", "https://docs.google.com/document/u/0/create" },
             { "sheet", "https://docs.google.com/spreadsheets/u/0/create" },
-            { "slides", "https://docs.google.com/presentation/u/0/create" }
+            { "slides", "https://docs.google.com/presentation/u/0/create" },
+            { "form", "https://docs.google.com/forms/u/0/create" }
         };
 
         [FunctionName("Redirect")]
