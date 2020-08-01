@@ -18,10 +18,12 @@ Which is the URL for a new Google doc.
 ### Currently Supported Redirects
 (Feel free to PR-in more!)
 
-| Key   | URL                                             |
-|-------|-------------------------------------------------|
-| doc   | https://docs.google.com/document/u/0/create     |
-| sheet | https://docs.google.com/spreadsheets/u/0/create |
+| Key    | URL                                             |
+|--------|-------------------------------------------------|
+| doc    | https://docs.google.com/document/u/0/create     |
+| sheet  | https://docs.google.com/spreadsheets/u/0/create |
+| slides | https://docs.google.com/presentation/u/0/create |
+| form   | https://docs.google.com/forms/u/0/create        |
 
 ### Why? (Browser Search Engine)
 
