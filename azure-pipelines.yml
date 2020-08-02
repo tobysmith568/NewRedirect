@@ -48,7 +48,7 @@ stages:
     - task: PublishCodeCoverageResults@1
       inputs:
         codeCoverageTool: 'Cobertura'
-        summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.cobertura.xml'
+        summaryFileLocation: '**/coverage.cobertura.xml'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
