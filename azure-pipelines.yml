@@ -39,6 +39,13 @@ stages:
           $(workingDirectory)/*.csproj
         arguments: --output $(System.DefaultWorkingDirectory)/publish_output --configuration Release
 
+    - task: DotNetCoreCLI@2
+      displayName: Test
+      inputs:
+        command: 'test'
+        projects: |
+          $(workingDirectory)/*.csproj
+
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
