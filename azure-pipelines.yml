@@ -40,15 +40,10 @@ stages:
         arguments: --output $(System.DefaultWorkingDirectory)/publish_output --configuration Release
 
     - task: DotNetCoreCLI@2
-      displayName: Test
       inputs:
-        command: 'test'
-        arguments: '--collect:"XPlat Code Coverage"'
-
-    - task: PublishCodeCoverageResults@1
-      inputs:
-        codeCoverageTool: 'Cobertura'
-        summaryFileLocation: '**/coverage.cobertura.xml'
+        command: test
+        projects: '**/*Tests/*.csproj'
+        arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
