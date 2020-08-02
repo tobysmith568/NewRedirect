@@ -43,12 +43,12 @@ stages:
       displayName: Test
       inputs:
         command: 'test'
-        arguments: '/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
+        arguments: '--collect:"XPlat Code Coverage"'
 
     - task: PublishCodeCoverageResults@1
       inputs:
         codeCoverageTool: 'Cobertura'
-        summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.xml'
+        summaryFileLocation: '$(System.DefaultWorkingDirectory)/**/coverage.cobertura.xml'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
