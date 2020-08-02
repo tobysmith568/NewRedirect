@@ -34,7 +34,7 @@ namespace NewRedirect.Storage
 
         public static string? Get(string key)
         {
-            return redirectData[key];
+            return redirectData.GetValueOrDefault(key);
         }
     }
 }
