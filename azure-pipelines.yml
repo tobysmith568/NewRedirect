@@ -43,6 +43,7 @@ stages:
       displayName: Test
       inputs:
         command: 'test'
+        arguments: '/p:CollectCoverage=true /p:CoverletOutputFormat=cobertura'
 
     - task: PublishCodeCoverageResults@1
       inputs:
