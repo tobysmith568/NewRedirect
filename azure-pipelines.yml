@@ -21,7 +21,7 @@ variables:
 
 stages:
 - stage: Build
-  displayName: Build stage
+  displayName: Build and Test stage
 
 
   jobs:
@@ -43,8 +43,6 @@ stages:
       displayName: Test
       inputs:
         command: 'test'
-        projects: |
-          $(workingDirectory)/*.csproj
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
