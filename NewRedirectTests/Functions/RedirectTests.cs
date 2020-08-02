@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Microsoft.AspNetCore.Http;
 using Moq;
 using Microsoft.AspNetCore.Http.Internal;
 using Microsoft.AspNetCore.Mvc;
 
-namespace NewRedirect.Tests
+namespace NewRedirect.Functions.Tests
 {
     [TestFixture]
     public class RedirectTests
